@@ -13,9 +13,16 @@ public class Main {
 
         Optional<String> hasVal = Optional.of("ABCDEFGHIJ");
 
+        /**.
+         * boolean isPresent()
+         * Returns true if the invoking object contains a value
+         * Returns false if no value is present
+         * **/
+
         if (noVal.isPresent()){
             System.out.println(("This won't be displayed"));
         }
+
         else{
             System.out.println("noVal has no value");
         }
@@ -24,7 +31,14 @@ public class Main {
             System.out.println("The string in hasVal is: " +hasVal.get());
         }
 
-        String defStr = noVal.orElse("Defauly String");
+        /**
+         * Optional orElse(Type defaultType)
+         * If the invoking object contains a value, the value is returned.
+         * Otherwise, the value obtained from orElse(Type defaultValue)
+         * is returned
+         * **/
+
+        String defStr = noVal.orElse("Default String");
         System.out.println(defStr);
     }
 }

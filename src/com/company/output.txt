@@ -1,3 +1,3 @@
 noVal has no value
 The string in hasVal is: ABCDEFGHIJ
-Defauly String
+Default String
